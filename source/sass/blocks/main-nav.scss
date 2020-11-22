@@ -1,0 +1,33 @@
+.main-nav__list {
+  list-style: none;
+  font-size: $fs-extra-min;
+  line-height: $lh-normal;
+  font-weight: $fw-bold;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__link {
+  color: $black;
+  text-decoration: none;
+}
+
+.main-nav__search {
+  font-size: $fs-extra-min;
+  line-height: $lh-normal;
+  font-weight: $fw-bold;
+}
+
+.main-nav__search::placeholder {
+  color: $black;
+  opacity: 1;
+}
+
+.main-nav__basket {
+  font-size: $fs-extra-min;
+  line-height: $lh-normal;
+  font-weight: $fw-bold;
+  text-align: center;
+  color: $black;
+  text-decoration: none;
+}

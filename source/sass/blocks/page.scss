@@ -1,0 +1,12 @@
+.page {
+  font-family: $main-font;
+  font-size: $fs-min;
+  line-height: $lh-normal;
+  color: $dark-grey;
+}
+
+.page__body-wrapper {
+  min-height: 100%;
+  margin: 0 auto;
+  width: 320px;
+}

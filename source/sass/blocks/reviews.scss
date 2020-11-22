@@ -1,0 +1,32 @@
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  font-size: $fs-tiny;
+  line-height: $lh-max;
+}
+
+.reviews__author {
+  font-size: $fs-extra-min;
+  line-height: $lh-max;
+}
+
+.reviews__author-name {
+  font-size: $fs-extra-min;
+  line-height: $lh-normal;
+  font-weight: $fw-bold;
+}
+
+.reviews__button {
+  display: block;
+  font-size: $fs-min;
+  line-height: $lh-min;
+  font-weight: $fw-bold;
+  color: $dark-grey;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid $dark-grey;
+  padding: 16px 10px;
+}
