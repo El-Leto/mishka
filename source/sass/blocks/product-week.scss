@@ -4,20 +4,20 @@
 }
 
 .product-week__text {
-  font-size: $fs-tiny;
-  line-height: $lh-normal;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .product-week__cost {
-  font-size: $fs-extra-min;
-  line-height: $lh-normal;
+  font-size: 17px;
+  line-height: 24px;
   font-weight: $fw-bold;
 }
 
 .product-week__button {
   display: block;
-  font-size: $fs-min;
-  line-height: $lh-min;
+  font-size: 18px;
+  line-height: 20px;
   font-weight: $fw-bold;
   color: $dark-grey;
   text-transform: uppercase;

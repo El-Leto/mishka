@@ -1,7 +1,15 @@
+/*color*/
+
 $black: #000000;
+$black-transparent: rgba(0, 0, 0, 0.3);
 $white: #ffffff;
 $dark-grey: #444444;
 $grey-footer: #f1f1f1;
 $tiffany: #63d1bb;
 $tiffany-dark: #56c3b2;
 $tiffany-darken: #149080;
+
+/*font*/
+$main-font: "Open Sans", "Arial", sans-serif;
+$fw-bold: 700;
+$fw-normal: 400;
