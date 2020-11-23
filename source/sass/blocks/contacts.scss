@@ -1,0 +1,19 @@
+.contacts__title {
+  font-size: $fs-min;
+  line-height: $lh-max;
+  font-weight: $fw-bold;
+  color: $black;
+}
+
+.contacts__button {
+  display: block;
+  font-size: $fs-min;
+  line-height: $lh-min;
+  font-weight: $fw-bold;
+  color: $dark-grey;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid $dark-grey;
+  padding: 16px 10px;
+}

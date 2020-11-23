@@ -1,0 +1,28 @@
+.main-header {
+  background-image: url("../img/header-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.main-header__list {
+  list-style: none;
+  font-size: $fs-extra-medium;
+  line-height: $lh-normal;
+  font-weight: $fw-bold;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header__item--subjects {
+  background-color: $tiffany;
+}
+
+.main-header__item--toys {
+  background-color: $tiffany-dark;
+}
+
+.main-header__item-button {
+  color: $white;
+  text-decoration: none;
+}

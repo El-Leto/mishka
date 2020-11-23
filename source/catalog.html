@@ -2,16 +2,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <div class="page-body__wrapper">
+    <div class="page__body-wrapper">
     <header class="page-header">
       <a class="page-header__logo" href="index.html"><img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Интернет-магазин «Мишка»"></a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a>Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
         </ul>
         <form class="main-nav__form" method="get">
           <input class="main-nav__search" type="search" placeholder="Поиск по сайту">
@@ -34,7 +36,7 @@
               </div>
               <div class="catalog__item-cost">
                 <p>1 200 р.</p>
-                <a class="catalog__card-button button" href="" aria-label="Положить в корзину"></a>
+                <a class="catalog__card-button" href="" aria-label="Положить в корзину"></a>
               </div>
             </div>
           </li>
@@ -47,7 +49,7 @@
               </div>
               <div class="catalog__item-cost">
                 <p>690 р.</p>
-                <a class="catalog__card-button button" href="" aria-label="Положить в корзину"></a>
+                <a class="catalog__card-button" href="" aria-label="Положить в корзину"></a>
               </div>
             </div>
           </li>
@@ -60,7 +62,7 @@
               </div>
               <div class="catalog__item-cost">
                 <p>1 500 р.</p>
-                <a class="catalog__card-button button" href="" aria-label="Положить в корзину"></a>
+                <a class="catalog__card-button" href="" aria-label="Положить в корзину"></a>
               </div>
             </div>
           </li>
@@ -76,7 +78,7 @@
         </div>
         <div class="production__desc">
           <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="production__button button" href="form.html" aria-label="Сделать заказ">Сделать заказ</a>
+          <a class="production__button" href="form.html" aria-label="Сделать заказ">Сделать заказ</a>
         </div>
       </section>
     </main>
@@ -104,9 +106,9 @@
           </li>
         </ul>
       </section>
-      <section class="page-footer__copyright copyright">
+      <section class="page-footer__copyright copyrights">
         <h2 class="visually-hidden">Сайт HTML Academy</h2>
-        <p class="copyright__text">Разработано</p>
+        <p class="copyrights__text">Разработано</p>
         <a href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Логотип HTML Academy</span></a>
       </section>
     </footer>

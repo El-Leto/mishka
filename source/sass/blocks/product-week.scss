@@ -1,0 +1,28 @@
+.product-week {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-week__text {
+  font-size: $fs-tiny;
+  line-height: $lh-normal;
+}
+
+.product-week__cost {
+  font-size: $fs-extra-min;
+  line-height: $lh-normal;
+  font-weight: $fw-bold;
+}
+
+.product-week__button {
+  display: block;
+  font-size: $fs-min;
+  line-height: $lh-min;
+  font-weight: $fw-bold;
+  color: $dark-grey;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid $dark-grey;
+  padding: 16px 10px;
+}
