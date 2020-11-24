@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
@@ -25,7 +26,7 @@
       <section class="form-header">
         <h1 class="form-header__title">Каталог товаров</h1>
       </section>
-      <section class="catalog">
+      <section class="catalog inner">
         <ul class="catalog__list">
           <li class="catalog__item">
             <a class="catalog__link" href=""><img class="catalog__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Зайчик в голубом костюме"></a>
@@ -68,17 +69,21 @@
           </li>
         </ul>
       </section>
-      <section class="production">
-        <div class="production__title">
-          <h3 class="production__production__title-text">Процесс производства</h3>
-        </div>
-        <div class="production__video">
-          <img class="production__image" src="https://via.placeholder.com/260x150" width="260" height="150" alt="Большая вязаная корзика бело-зеленого цвета">
-          <button class="production__button" type="button" aria-label="Включить воспроизведение видео"></button>
-        </div>
-        <div class="production__desc">
-          <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="production__button" href="form.html" aria-label="Сделать заказ">Сделать заказ</a>
+      <section class="production inner">
+        <div class="production__wrapper">
+          <div class="production__title">
+            <h3 class="production__production__title-text">Процесс производства</h3>
+          </div>
+          <div class="production__video">
+            <img class="production__image" src="https://via.placeholder.com/260x150" width="260" height="150" alt="Большая вязаная корзика бело-зеленого цвета">
+            <button class="production__video-button" type="button" aria-label="Включить воспроизведение видео"></button>
+          </div>
+          <div class="production__desc">
+            <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          </div>
+          <div class="production__order">
+            <a class="production__button" href="form.html" aria-label="Сделать заказ">Сделать заказ</a>
+          </div>
         </div>
       </section>
     </main>

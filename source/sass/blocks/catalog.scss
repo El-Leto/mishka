@@ -1,0 +1,46 @@
+.catalog__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__item {
+  padding-bottom: 30px;
+}
+
+.catalog__link {
+  text-decoration: none;
+  color: $black;
+}
+
+.catalog__desc {
+  padding-left: 28px;
+  padding-right: 28px;
+  border: 1px solid $light-grey;
+}
+
+.catalog__item-title {
+  border-bottom: 2px solid $light-grey;
+}
+
+.catalog__title {
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 6px;
+}
+
+.catalog__text {
+  font-size: 13px;
+  line-height: 30px;
+  margin: 0;
+  padding-bottom: 18px;
+}
+
+.catalog__item-cost {
+  font-size: 15px;
+  line-height: 27px;
+  font-weight: $fw-bold;
+  color: $black;
+}

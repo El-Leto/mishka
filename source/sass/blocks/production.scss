@@ -1,0 +1,38 @@
+.production__wrapper {
+  border: 1px solid $light-grey;
+}
+
+.production__title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: $fw-bold;
+  color: $black;
+}
+
+.production__text {
+  font-size: 13px;
+  line-height: 24px;
+  padding-left: 34px;
+  padding-right: 30px;
+  margin: 0;
+}
+
+.production__order {
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-bottom: 33px;
+  padding-top: 41px;
+}
+
+.production__button {
+  display: block;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: $fw-bold;
+  color: $dark-grey;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid $dark-grey;
+  padding: 18px 11px;
+}
