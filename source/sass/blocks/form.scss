@@ -1,0 +1,113 @@
+.form__entry-text {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.form__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__fieldset-title {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: $fw-bold;
+  color: $tiffany;
+  text-transform: uppercase;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.form__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.form__item-name {
+  padding-bottom: 20px;
+}
+
+.form__item-name:last-child {
+  padding-bottom: 0;
+}
+
+.form__label-radio {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: $fw-bold;
+  color: $black;
+}
+
+.form__label {
+  display: block;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: $fw-bold;
+  color: $black;
+}
+
+.form__text {
+  display: block;
+  font-family: $main-font;
+  font-size: 17px;
+  line-height: 18px;
+  border: none;
+  border-bottom: 2px solid $dark-grey;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  width: 100%;
+}
+
+.form__text::placeholder {
+  color: $black-transparent;
+}
+
+.form__item-contacts {
+  padding-bottom: 34px;
+}
+
+.form__item-contacts:last-child {
+  padding-bottom: 0;
+}
+
+.form__label-contacts {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: $fw-bold;
+  color: $tiffany;
+  text-transform: uppercase;
+}
+
+.form__textarea {
+  font-family: $main-font;
+  font-size: 17px;
+  line-height: 18px;
+  padding: 17px;
+  border: 2px solid $dark-grey;
+}
+
+.form__textarea::placeholder {
+  color: $black-transparent;
+}
+
+.form__extra-text {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form-button {
+  font-family: $main-font;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: $fw-bold;
+  color: $dark-grey;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background-color: $white;
+  border: 2px solid $dark-grey;
+  padding: 16px 10px;
+  width: 100%;
+}
