@@ -1,3 +1,9 @@
+.reviews__list {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
 .reviews__item {
   margin: 0;
 }
@@ -18,8 +24,15 @@
   font-weight: $fw-bold;
 }
 
+.reviews__toggles {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+
 .reviews__button {
-  display: block;
+  width: 100%;
+  box-sizing: border-box;
   font-size: 18px;
   line-height: 20px;
   font-weight: $fw-bold;
@@ -29,4 +42,8 @@
   text-decoration: none;
   border: 2px solid $dark-grey;
   padding: 16px 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 175px;
+  }
 }

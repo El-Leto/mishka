@@ -6,12 +6,37 @@
 }
 
 .main-header__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
   list-style: none;
   font-size: 19px;
   line-height: 24px;
   font-weight: $fw-bold;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.main-header__item {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 24px;
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 25px;
+    padding-bottom: 34px;
+  }
 }
 
 .main-header__item--subjects {

@@ -1,5 +1,4 @@
 /*color*/
-
 $black: #000000;
 $black-transparent: rgba(0, 0, 0, 0.3);
 $white: #ffffff;
@@ -14,3 +13,8 @@ $tiffany-darken: #149080;
 $main-font: "Open Sans", "Arial", sans-serif;
 $fw-bold: 700;
 $fw-normal: 400;
+
+/*viewports*/
+$tablet-width: 768px;
+$desktop-width: 1150px;
+$mobile-width-only: 767px;

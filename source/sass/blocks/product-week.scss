@@ -1,6 +1,12 @@
 .product-week {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .product-week__text {
