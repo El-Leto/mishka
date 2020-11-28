@@ -2,13 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <div class="page__body-wrapper">
-    <header class="page-header inner">
+    <header class="page-header container">
       <a class="page-header__logo" href="index.html"><img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Интернет-магазин «Мишка»"></a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -26,8 +26,8 @@
       <section class="form-header">
         <h1 class="form-header__title">Каталог товаров</h1>
       </section>
-      <section class="catalog inner">
-        <ul class="catalog__list">
+      <section class="catalog container">
+        <ul class="catalog__list inner">
           <li class="catalog__item">
             <a class="catalog__link" href=""><img class="catalog__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Зайчик в голубом костюме"></a>
             <div class="catalog__desc">
@@ -69,8 +69,8 @@
           </li>
         </ul>
       </section>
-      <section class="production inner">
-        <div class="production__wrapper">
+      <section class="production container">
+        <div class="production__wrapper inner">
           <div class="production__title">
             <h3 class="production__production__title-text">Процесс производства</h3>
           </div>
@@ -88,35 +88,38 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="page-footer__logo">
-        <h2 class="visually-hidden">Интернет-магазин «Мишка»</h2>
-      </section>
-      <section class="page-footer__social social">
-        <h2 class="visually-hidden">Контакты</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__button" href="">
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__button" href="">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__button" href="">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="page-footer__copyright copyrights">
-        <h2 class="visually-hidden">Сайт HTML Academy</h2>
-        <p class="copyrights__text">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Логотип HTML Academy</span></a>
-      </section>
+      <div class="container">
+        <div class="inner">
+          <section class="page-footer__logo">
+            <h2 class="visually-hidden">Интернет-магазин «Мишка»</h2>
+          </section>
+          <section class="page-footer__social social">
+            <h2 class="visually-hidden">Контакты</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__button" href="">
+                  <span class="visually-hidden">Instagram</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__button" href="">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__button" href="">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="page-footer__copyright copyrights">
+            <h2 class="visually-hidden">Сайт HTML Academy</h2>
+            <p class="copyrights__text">Разработано</p>
+            <a href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Логотип HTML Academy</span></a>
+          </section>
+        </div>
+      </div>
     </footer>
-    </div>
   </body>
 </html>

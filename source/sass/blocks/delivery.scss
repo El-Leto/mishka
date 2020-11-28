@@ -1,0 +1,12 @@
+.delivery {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    order: 5;
+    font-size: 15px;
+    line-height: 24px;
+    width: 334px;
+    text-align: right;
+  }
+}

@@ -1,0 +1,25 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.page-header__logo {
+  height: 79px;
+
+  @media (min-width: $tablet-width) {
+    height: 89px;
+    width: 370px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+}

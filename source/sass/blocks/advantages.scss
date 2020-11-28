@@ -1,8 +1,23 @@
 .advantages__list {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   list-style: none;
   font-size: 17px;
   line-height: 20px;
   font-weight: $fw-bold;
   color: $black;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    max-height: 580px;
+  }
+}
+
+.advantages__item {
+  height: 150px;
+  width: 50%;
 }
