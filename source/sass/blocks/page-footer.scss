@@ -1,3 +1,23 @@
 .page-footer {
   background-color: $grey-footer;
 }
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__image {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

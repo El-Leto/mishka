@@ -1,4 +1,5 @@
 .advantages__list {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,5 +13,11 @@
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
+    max-height: 580px;
   }
+}
+
+.advantages__item {
+  height: 150px;
+  width: 50%;
 }
