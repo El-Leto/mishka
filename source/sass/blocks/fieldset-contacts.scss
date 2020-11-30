@@ -1,0 +1,16 @@
+.fieldset-contacts {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $grey-footer;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.fieldset-contacts__text {
+  @media (min-width: $tablet-width) {
+    background-color: $grey-footer;
+  }
+}
