@@ -10,4 +10,14 @@
   text-align: center;
   padding-top: 73px;
   padding-bottom: 73px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

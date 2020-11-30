@@ -16,37 +16,45 @@
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a class="main-nav__link">Вязание на заказ</a></li>
         </ul>
+      </nav>
+      <div class="nav-extra">
         <form class="main-nav__form" method="get">
-          <input class="main-nav__search" type="search" placeholder="Поиск по сайту">
+          <label><input class="main-nav__search" type="search" placeholder="Поиск по сайту"></label>
         </form>
         <a class="main-nav__basket" href="" >Корзина: <span>пока пуста</span></a>
-      </nav>
+      </div>
+      <div class="nav-bonus">
+        <ul class="nav-bonus__list">
+          <li class="nav-bonus__item"><a class="nav-bonus__link" href="">Новые поступления</a></li>
+          <li class="nav-bonus__item"><a class="nav-bonus__link" href="">Распродажа</a></li>
+        </ul>
+      </div>
+      <span class="delivery">Бесплатная доставка по России</span>
     </header>
     <main class="page-main">
       <section class="form-header">
         <h1 class="form-header__title">Вязание на заказ</h1>
       </section>
       <section class="form container">
-        <div class="inner">
-          <h2 class="visually-hidden">Форма заявки для изготовления индивидуального заказа</h2>
-          <p class="form__entry-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-          <form class="form__body" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="form__fieldset">
-              <legend class="form__fieldset-title">Тип</legend>
-              <ul class="form__list">
-                <li class="form__item">
-                  <input class="form__radio" type="radio" name="product-type" value="accessory" id="accessory" checked>
-                  <label class="form__label-radio" for="accessory">Аксессуар для интерьера</label>
-                </li>
-                <li class="form__item">
-                  <input class="form__radio" type="radio" name="product-type" value="child-toy" id="child-toy">
-                  <label class="form__label-radio" for="child-toy">Детская игрушка</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__fieldset">
-              <legend class="form__fieldset-title">Цвет</legend>
-              <ul class="form__list">
+        <h2 class="visually-hidden">Форма заявки для изготовления индивидуального заказа</h2>
+        <p class="form__entry-text inner">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="form__body" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="form__fieldset inner">
+            <h2 class="form__fieldset-title">Тип</h2>
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__radio" type="radio" name="product-type" value="accessory" id="accessory" checked>
+                <label class="form__label-radio" for="accessory">Аксессуар для интерьера</label>
+              </li>
+              <li class="form__item">
+                <input class="form__radio" type="radio" name="product-type" value="child-toy" id="child-toy">
+                <label class="form__label-radio" for="child-toy">Детская игрушка</label>
+              </li>
+            </ul>
+          </fieldset>
+            <fieldset class="form__fieldset fieldset-color">
+              <h2 class="form__fieldset-title">Цвет</h2>
+              <ul class="form__list fieldset-color__list">
                 <li class="form__item-color">
                   <input class="visually-hidden form__checkbox" type="checkbox" name="white" id="white" checked>
                   <label class="form__label" for="white">Белый</label>
@@ -73,55 +81,57 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__fieldset">
-              <legend class="form__fieldset-title">ФИО</legend>
+            <fieldset class="form__fieldset inner">
+              <h2 class="form__fieldset-title">ФИО</h2>
               <ul class="form__list">
                 <li class="form__item-name">
-                  <label class="form__label" for="name">Имя:</label>
+                  <label class="form__label form__label--name" for="name">Имя:</label>
                   <input class="form__text" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
                 </li>
                 <li class="form__item-name">
-                  <label class="form__label" for="surname">Фамилия:</label>
+                  <label class="form__label form__label--name" for="surname">Фамилия:</label>
                   <input class="form__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
                 </li>
                 <li class="form__item-name">
-                  <label class="form__label" for="patronym">Отчество:</label>
+                  <label class="form__label form__label--name" for="patronym">Отчество:</label>
                   <input class="form__text" type="text" name="patronym" id="patronym" placeholder="Отчество, если желаете">
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__fieldset">
-              <legend class="form__fieldset-title visually-hidden">Контакты</legend>
-              <ul class="form__list">
+            <fieldset class="form__fieldset fieldset-contacts">
+              <h2 class="form__fieldset-title visually-hidden">Контакты</h2>
+              <ul class="form__list form__list--contacts">
                 <li class="form__item-contacts">
                   <label class="form__label-contacts" for="tel">Тел</label>
-                  <input class="form__text" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                  <input class="form__text fieldset-contacts__text" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                 </li>
                 <li class="form__item-contacts">
                   <label class="form__label-contacts" for="e-mail">E-mail</label>
-                  <input class="form__text" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*" required>
+                  <input class="form__text fieldset-contacts__text" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*" required>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__fieldset">
-              <legend class="form__fieldset-title">Доп</legend>
+            <fieldset class="form__fieldset inner">
+              <h2 class="form__fieldset-title">Доп</h2>
                 <div class="form__item">
                   <label class="visually-hidden form__label" for="extra">Пожелания</label>
                   <textarea class="form__textarea" rows="6" name="extra" id="extra" placeholder="Опишите все ваши
   пожелания к заказу"></textarea>
                 </div>
             </fieldset>
-            <p class="form__extra-text">*Поля обязательны для заполнения</p>
-            <button class="form-button" type="submit">Отправить заказ</button>
+            <div class="form__finish inner">
+              <p class="form__extra-text">*Поля обязательны для заполнения</p>
+              <button class="form__button" type="submit">Отправить заказ</button>
+            </div>
           </form>
-        </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="container">
-        <div class="inner">
+        <div class="page-footer__wrapper inner">
           <section class="page-footer__logo">
             <h2 class="visually-hidden">Интернет-магазин «Мишка»</h2>
+            <img class="page-footer__image" src="https://via.placeholder.com/102x34" width="102" height="34" alt="Логотип интернет-магазина «Мишка»">
           </section>
           <section class="page-footer__social social">
             <h2 class="visually-hidden">Контакты</h2>

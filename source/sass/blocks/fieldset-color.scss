@@ -1,0 +1,26 @@
+.fieldset-color {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $grey-footer;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.fieldset-color__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-height: 250px;
+    width: 78%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-height: 220px;
+  }
+}
