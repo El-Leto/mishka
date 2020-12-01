@@ -1,5 +1,12 @@
 .production__wrapper {
   border: 1px solid $light-grey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
 .production__title {
@@ -7,6 +14,23 @@
   line-height: 24px;
   font-weight: $fw-bold;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    width: 100%;
+  }
+}
+
+.production__video {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.production__desc {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 .production__text {
@@ -22,6 +46,12 @@
   padding-right: 34px;
   padding-bottom: 33px;
   padding-top: 41px;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .production__button {
