@@ -4,6 +4,8 @@
   @media (min-width: $desktop-width) {
     display: block;
     order: 4;
+    z-index: 100;
+    width: 468px;
   }
 }
 
@@ -17,6 +19,18 @@
   font-weight: $fw-bold;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+  }
+}
+
+.nav-bonus__item {
+  display: block;
+  width: 50%;
+  text-align: left;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .nav-bonus__link {

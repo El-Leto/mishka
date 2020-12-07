@@ -1,13 +1,26 @@
 /*color*/
+$transparent: rgba(0, 0, 0, 0);
 $black: #000000;
+$black-transparent-min: rgba(0, 0, 0, 0.6);
 $black-transparent: rgba(0, 0, 0, 0.3);
+$black-transparent-max: rgba(0, 0, 0, 0.2);
+$black-toggle: #231f20;
 $white: #ffffff;
+$background: #fafafa;
 $light-grey: #ececec;
 $dark-grey: #444444;
 $grey-footer: #f1f1f1;
+$grey-svg: #c7c7c7;
 $tiffany: #63d1bb;
+$tiffany-background: #62d1ba;
+$tiffany-transparent: rgba(99, 209, 187, 0.3);
 $tiffany-dark: #56c3b2;
 $tiffany-darken: #149080;
+$tiffany-darken-transparent-min: rgba(20, 144, 127, 0.7);
+$tiffany-darken-transparent: rgba(20, 144, 127, 0.5);
+$tiffany-darken-transparent-max: rgba(20, 144, 127, 0.3);
+$tiffany-footer: #46c1ae;
+$tiffany-footer-transparent: rgba(70, 193, 174, 0.3);
 
 /*font*/
 $main-font: "Open Sans", "Arial", sans-serif;

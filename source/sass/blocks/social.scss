@@ -1,7 +1,23 @@
 .social__list {
   list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .social__button {
-  text-decoration: none;
+  display: block;
+  text-align: center;
+  color: $black;
+
+  &:hover {
+    color: $tiffany-footer;
+  }
+
+  &:active {
+    color: $tiffany-footer-transparent;
+  }
 }

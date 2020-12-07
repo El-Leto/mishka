@@ -21,3 +21,17 @@
     display: block;
   }
 }
+
+.page-footer__social {
+  width: 55%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 25%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 140px;
+  }
+}

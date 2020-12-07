@@ -1,0 +1,8 @@
+.contacts-map {
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    order: 5;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
