@@ -1,9 +1,10 @@
 .copyrights__link {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   text-decoration: none;
   color: $tiffany;
+  width: 181px;
 
   &:hover {
     color: $tiffany-footer;
@@ -19,9 +20,14 @@
   line-height: 18px;
   font-weight: $fw-bold;
   color: $black;
+  margin-top: 29px;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
 }
 
 .copyrights__htmlacademy-logo {
-  margin-top: 3px;
-  margin-left: 15px;
+  margin-top: -10px;
 }

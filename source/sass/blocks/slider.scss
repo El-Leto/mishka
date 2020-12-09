@@ -10,12 +10,22 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     margin-left: 50px;
     margin-right: 50px;
+    padding-top: 49px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 225px;
+    padding-top: 44px;
   }
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__item--show {
+  display: block;
 }

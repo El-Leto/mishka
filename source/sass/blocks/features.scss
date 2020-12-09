@@ -1,21 +1,29 @@
 .features__list {
   font-size: 15px;
   line-height: 20px;
-  margin-top: 20px;
+  margin-top: 21px;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 129px;
+  }
 }
 
 .features__item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 7px;
+  padding-bottom: 12px;
   border-bottom: 1px solid $light-grey;
 }
 
 .features__text {
-  width: 37%;
+  width: 38%;
+
+  @media (min-width: $tablet-width) {
+    width: 33%;
+  }
 }
 
 .features__desc {

@@ -1,8 +1,14 @@
 .contacts-map {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 50%;
     order: 5;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 72px;
+    margin-bottom: 100px;
+    padding-right: 50px;
+    box-sizing: border-box;
   }
 }

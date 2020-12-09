@@ -22,11 +22,13 @@
     width: 100%;
     margin-left: 50px;
     margin-right: 50px;
+    padding-top: 31px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row-reverse;
     justify-content: flex-end;
+    padding-top: 42px;
   }
 }
 
@@ -35,10 +37,17 @@
   line-height: 30px;
   font-weight: $fw-bold;
   color: $black;
+  margin-top: 38px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -50,11 +59,13 @@
     background-size: auto;
     width: 50px;
     height: 81px;
+    margin-right: 3px;
+    margin-bottom: 3px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 63px;
-    margin-right: 63px;
+    margin-left: 60px;
+    margin-right: 64px;
   }
 }
 
@@ -68,13 +79,17 @@
   text-align: center;
   text-decoration: none;
   border: 2px solid $dark-grey;
-  padding: 16px 10px;
+  padding: 14px 10px;
   margin: 0 30px;
 
   @media (min-width: $tablet-width) {
     width: 230px;
     margin: 0 auto;
     font-size: 17px;
+    box-sizing: border-box;
+    padding-left: 8px;
+    padding-top: 15px;
+    padding-bottom: 13px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,9 +98,15 @@
 }
 
 .contacts__button-wrapper {
+  margin-top: 37px;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 50%;
     margin: 0;
-    margin-bottom: 50px;
   }
 }

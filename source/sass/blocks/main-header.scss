@@ -1,17 +1,41 @@
 .main-header {
   background-image: url("../img/header-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: auto;
+  background-position: 50% 13%;
+  background-size: 101%;
   background-color: $background;
-  height: 488px;
   overflow: auto;
 
   @media (min-width: $tablet-width) {
     position: relative;
     top: -68px;
     margin-bottom: -50px;
-    height: 746px;
+    background-position: center;
+    background-size: 85%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -64px;
+  }
+}
+
+.main-header::after {
+  @media (min-width: $tablet-width) {
+    display: block;
+    content: "";
+    position: relative;
+    height: 12px;
+    background-image: url("../img/zigzag-fill.svg");
+    background-repeat: repeat;
+    background-position: top;
+    background-size: auto;
+    margin-top: -11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    height: 17px;
+    margin-top: -17px;
   }
 }
 
