@@ -1,6 +1,33 @@
+.copyrights__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: $tiffany;
+  width: 181px;
+
+  &:hover {
+    color: $tiffany-footer;
+  }
+
+  &:active {
+    color: $tiffany-footer-transparent;
+  }
+}
+
 .copyrights__text {
   font-size: 19px;
   line-height: 18px;
   font-weight: $fw-bold;
   color: $black;
+  margin-top: 29px;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
+}
+
+.copyrights__htmlacademy-logo {
+  margin-top: -10px;
 }

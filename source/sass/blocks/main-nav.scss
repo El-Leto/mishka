@@ -1,17 +1,59 @@
 .main-nav {
+  width: 100%;
+
   @media (min-width: $tablet-width) {
     order: 3;
+    width: 50%;
+    z-index: 100;
   }
 
   @media (min-width: $desktop-width) {
     order: 0;
+    width: 489px;
+    border-bottom: 1px solid $light-grey;
   }
 }
 
 .main-nav__toggle {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 81px;
+  height: 78px;
+  background-color: $transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  &:active,
+  &:focus {
+    border: none;
+  }
+}
+
+.main-nav__toggle--closed {
+  background-image: url("../img/menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.main-nav__toggle--opened {
+  background-image: url("../img/menu-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.main-nav__block {
+  visibility: hidden;
+  margin-top: -150px;
 }
 
 .main-nav__list {
@@ -28,20 +70,110 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-between;
-    width: 334px;
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
+}
+
+.main-nav__item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid $light-grey;
+  padding-right: 27px;
+  padding-left: 76px;
+  padding-top: 28px;
+  padding-bottom: 26px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding-top: 19px;
+    padding-bottom: 22px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 167px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 50%;
   }
 }
 
 .main-nav__link {
   color: $black;
   text-decoration: none;
+  display: block;
+
+  &:hover {
+    color: $black-transparent-min;
+  }
+
+  &:active {
+    color: $black-transparent;
+  }
+}
+
+.main-nav__form {
+  padding-right: 27px;
+  padding-left: 32px;
+  padding-top: 28px;
+  padding-bottom: 26px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $light-grey;
+    border-right: 1px solid $light-grey;
+    border-left: 1px solid $light-grey;
+    padding-top: 36px;
+    padding-bottom: 34px;
+    padding-left: 33px;
+    padding-right: 31px;
+  }
+}
+
+.main-nav__search-label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  fill: $black-transparent-max;
+
+  &:hover {
+    fill: $tiffany;
+  }
+
+  &:active {
+    fill: $tiffany-transparent;
+  }
+}
+
+.main-nav__search-svg {
+  margin-right: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
 }
 
 .main-nav__search {
   font-size: 17px;
   line-height: 24px;
   font-weight: $fw-bold;
+  text-align: left;
+  border: none;
+  padding: 0;
+  width: 80%;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__search::placeholder {
@@ -49,11 +181,53 @@
   opacity: 1;
 }
 
+.main-nav__basket-svg {
+  margin-right: 25px;
+  position: relative;
+  top: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 29px;
+  }
+}
+
 .main-nav__basket {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
   font-size: 17px;
   line-height: 24px;
   font-weight: $fw-bold;
-  text-align: center;
+  text-align: left;
   color: $black;
   text-decoration: none;
+  padding-right: 27px;
+  padding-left: 30px;
+  padding-top: 28px;
+  padding-bottom: 26px;
+  border-top: 1px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
+  fill: $black-transparent-max;
+
+  &:hover {
+    color: $black-transparent-min;
+    fill: $tiffany;
+  }
+
+  &:active {
+    color: $black-transparent;
+    fill: $tiffany-transparent;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    border-top: none;
+    padding-top: 33px;
+    padding-bottom: 32px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 52px;
+  }
 }

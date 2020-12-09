@@ -3,10 +3,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin-left: 30px;
+  margin-right: 30px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 49px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 225px;
+    padding-top: 44px;
+  }
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__item--show {
+  display: block;
 }
