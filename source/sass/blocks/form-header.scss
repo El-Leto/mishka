@@ -1,5 +1,36 @@
 .form-header {
   background-color: $grey-footer;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: -68px;
+    margin-bottom: -50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -64px;
+  }
+}
+
+.form-header::after {
+  @media (min-width: $tablet-width) {
+    display: block;
+    content: "";
+    position: relative;
+    height: 12px;
+    background-image: url("../img/zigzag-fill.svg");
+    background-repeat: repeat;
+    background-position: top;
+    background-size: auto;
+    margin-top: -11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    height: 17px;
+    margin-top: -17px;
+    background-size: auto;
+  }
 }
 
 .form-header__title {
@@ -8,16 +39,22 @@
   font-weight: $fw-bold;
   color: $black;
   text-align: center;
-  padding-top: 73px;
-  padding-bottom: 73px;
+  padding-top: 72px;
+  padding-bottom: 20px;
+  margin: 0;
+  min-height: 84px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    padding-top: 102px;
+    min-height: 104px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    padding-top: 100px;
+    min-height: 132px;
   }
 }

@@ -6,13 +6,15 @@
     background-color: $grey-footer;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 57px;
+    padding-bottom: 11px;
   }
 }
 
 .fieldset-color__list {
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -21,6 +23,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-height: 220px;
+    width: 100%;
   }
 }
