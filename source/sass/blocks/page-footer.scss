@@ -14,8 +14,21 @@
   }
 }
 
+.page-footer__button {
+  display: block;
+}
+
 .page-footer__image {
   display: none;
+  color: $black;
+
+  &:hover {
+    color: $tiffany-footer;
+  }
+
+  &:active {
+    color: $tiffany-footer-transparent;
+  }
 
   @media (min-width: $tablet-width) {
     display: block;
