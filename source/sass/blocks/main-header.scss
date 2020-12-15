@@ -26,7 +26,7 @@
     content: "";
     position: relative;
     height: 12px;
-    background-image: url("../img/zigzag-fill.svg");
+    background-image: url("../img/zigzag-svg/zigzag-fill.svg");
     background-repeat: repeat;
     background-position: top;
     background-size: auto;
@@ -34,7 +34,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/zigzag-fill-desktop.svg");
+    background-image: url("../img/zigzag-svg/zigzag-fill-desktop.svg");
     height: 17px;
     margin-top: -17px;
   }

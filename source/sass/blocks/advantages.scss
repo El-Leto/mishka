@@ -3,14 +3,14 @@
   content: "";
   position: relative;
   height: 6px;
-  background-image: url("../img/zigzag-line.svg");
+  background-image: url("../img/zigzag-svg/zigzag-line.svg");
   background-repeat: repeat;
   background-position: top;
   background-size: auto;
 
   @media (min-width: $tablet-width) {
     height: 17px;
-    background-image: url("../img/zigzag-line-tablet.svg");
+    background-image: url("../img/zigzag-svg/zigzag-line-tablet.svg");
     background-size: 100%;
     margin-bottom: 56px;
   }
@@ -84,7 +84,7 @@
   left: 8px;
   width: 55px;
   height: 38px;
-  background-image: url("../img/icon-1.svg");
+  background-image: url("../img/advantages-icon/icon-1.svg");
   background-repeat: no-repeat;
   background-size: auto;
   margin-bottom: 16px;
@@ -101,7 +101,7 @@
   position: relative;
   width: 55px;
   height: 38px;
-  background-image: url("../img/icon-2.svg");
+  background-image: url("../img/advantages-icon/icon-2.svg");
   background-repeat: no-repeat;
   background-size: auto;
   margin-top: 29px;
@@ -115,7 +115,7 @@
   left: 7px;
   width: 55px;
   height: 38px;
-  background-image: url("../img/icon-3.svg");
+  background-image: url("../img/advantages-icon/icon-3.svg");
   background-repeat: no-repeat;
   background-size: auto;
   margin-top: 34px;
@@ -129,7 +129,7 @@
   left: 3px;
   width: 55px;
   height: 38px;
-  background-image: url("../img/icon-4.svg");
+  background-image: url("../img/advantages-icon/icon-4.svg");
   background-repeat: no-repeat;
   background-size: auto;
   margin-top: 31px;
@@ -152,7 +152,7 @@
   left: -6px;
   width: 55px;
   height: 38px;
-  background-image: url("../img/icon-5.svg");
+  background-image: url("../img/advantages-icon/icon-5.svg");
   background-repeat: no-repeat;
   background-size: auto;
   margin-top: 32px;
@@ -170,7 +170,7 @@
   left: 3px;
   width: 55px;
   height: 38px;
-  background-image: url("../img/icon-6.svg");
+  background-image: url("../img/advantages-icon/icon-6.svg");
   background-repeat: no-repeat;
   background-size: auto;
   margin-top: 31px;

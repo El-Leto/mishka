@@ -484,6 +484,14 @@
   width: 100%;
   height: 142px;
 
+  &:hover {
+    border: 2px solid $tiffany-background;
+  }
+
+  &:active {
+    border: 2px solid $tiffany-background;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 19px;
     padding: 15px;
