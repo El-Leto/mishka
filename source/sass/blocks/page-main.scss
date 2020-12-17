@@ -35,7 +35,7 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    margin-top: 33px;
+    margin-top: 34px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,6 +83,7 @@
     margin-right: 50px;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
+    z-index: 5;
   }
 
   @media (min-width: $desktop-width) {
