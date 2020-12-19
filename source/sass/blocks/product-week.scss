@@ -60,12 +60,25 @@
     margin-right: 50px;
     grid-column: 2 / 3;
     grid-row: 2 / 4;
-    align-self: center;
+    align-self: start;
     text-align: left;
+    padding-top: 36px;
   }
 
   @media (min-width: $desktop-width) {
     grid-row: 1 / 4;
+    padding-top: 57px;
+  }
+}
+
+.product-week__image-size {
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
   }
 }
 

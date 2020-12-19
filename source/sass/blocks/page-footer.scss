@@ -16,6 +16,10 @@
 
 .page-footer__button {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 8px;
+  }
 }
 
 .page-footer__image {

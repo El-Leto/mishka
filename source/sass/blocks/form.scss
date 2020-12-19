@@ -20,8 +20,8 @@
 
 .form__fieldset {
   border: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -76,7 +76,6 @@
   align-items: center;
   justify-content: space-between;
   color: $black-transparent-max;
-  border-bottom: 2px solid $dark-grey;
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
@@ -86,7 +85,10 @@
 
 .form__input-contacts-wrapper:hover {
   color: $tiffany-background;
-  border-color: $tiffany-background;
+}
+
+.form__input-contacts-wrapper:focus {
+  color: $tiffany-background;
 }
 
 .form__fieldset-title {
@@ -414,6 +416,21 @@
   width: 99%;
   height: 18px;
 
+  &:hover {
+    outline: none;
+    border-bottom: 2px solid $tiffany-background;
+  }
+
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid $tiffany-background;
+  }
+
+  &:active {
+    outline: none;
+    border-bottom: 2px solid $tiffany-background;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 19px;
     padding-left: 17px;
@@ -440,6 +457,23 @@
   padding-bottom: 17px;
   flex-grow: 1;
   height: 18px;
+  border-bottom: 2px solid $dark-grey;
+  width: 100%;
+
+  &:hover {
+    outline: none;
+    border-bottom: 2px solid $tiffany-background;
+  }
+
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid $tiffany-background;
+  }
+
+  &:active {
+    outline: none;
+    border-bottom: 2px solid $tiffany-background;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
@@ -485,10 +519,17 @@
   height: 142px;
 
   &:hover {
+    outline: none;
+    border: 2px solid $tiffany-background;
+  }
+
+  &:focus {
+    outline: none;
     border: 2px solid $tiffany-background;
   }
 
   &:active {
+    outline: none;
     border: 2px solid $tiffany-background;
   }
 
@@ -556,29 +597,41 @@
 }
 
 .form__input-svg--phone {
-  padding-right: 7px;
+  margin-left: -31px;
+  padding-right: 6px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 26px;
-    padding-top: 4px;
+    margin-left: -51px;
+    padding-right: 25px;
+    padding-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 8px;
+    margin-left: -33px;
+    padding-right: 6px;
   }
 }
 
 .form__input-svg--mail {
-  padding-right: 3px;
+  margin-left: -34px;
+  padding-right: 2px;
   padding-top: 6px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 22px;
+    margin-left: -54px;
+    padding-right: 21px;
     padding-top: 9px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 4px;
+    margin-left: -36px;
+    padding-right: 2px;
     padding-top: 10px;
+  }
+}
+
+.form__background-color {
+  @media (min-width: $tablet-width) {
+    background-color: $grey-footer;
   }
 }
