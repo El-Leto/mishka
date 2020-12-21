@@ -9,6 +9,7 @@
 
   @media (min-width: $desktop-width) {
     top: -64px;
+    border-top: 1px solid $light-grey;
   }
 }
 
@@ -18,7 +19,7 @@
     content: "";
     position: relative;
     height: 12px;
-    background-image: url("../img/zigzag-svg/zigzag-fill.svg");
+    background-image: url("../img/zigzag/zigzag-fill.svg");
     background-repeat: repeat;
     background-position: top;
     background-size: auto;
@@ -26,7 +27,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/zigzag-svg/zigzag-fill-desktop.svg");
+    background-image: url("../img/zigzag/zigzag-fill-desktop.svg");
     height: 17px;
     margin-top: -17px;
     background-size: auto;

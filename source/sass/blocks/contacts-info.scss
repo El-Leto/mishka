@@ -90,4 +90,13 @@
   text-decoration: none;
   border-bottom: 1px solid $tiffany-background;
   padding-bottom: 2px;
+
+  &:hover {
+    color: $tiffany-footer;
+  }
+
+  &:active {
+    color: $tiffany-footer;
+    border-bottom: none;
+  }
 }

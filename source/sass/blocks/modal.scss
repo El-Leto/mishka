@@ -1,0 +1,149 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 300;
+  margin: auto;
+  background-color: rgba($white, 0.9);
+}
+
+.modal--open {
+  display: block;
+}
+
+.modal__wraper {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 320px;
+  height: 336px;
+  border-top: 1px solid $grey-modal;
+  border-bottom: 1px solid $grey-modal;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+    border: 1px solid $grey-modal;
+  }
+}
+
+.modal__form {
+  margin: 30px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 30px 108px;
+    margin-top: 0;
+  }
+}
+
+.modal__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: $fw-bold;
+  color: $black;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 29px;
+  margin-bottom: 14px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-left: 49px;
+  padding-right: 49px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+    margin-top: 37px;
+    margin-bottom: 13px;
+    padding: 0;
+  }
+}
+
+.modal__text {
+  font-size: 15px;
+  line-height: 30px;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.modal__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  margin: 22px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 18px 0;
+  }
+}
+
+.modal__item {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: $fw-bold;
+}
+
+.modal__radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 52px;
+  box-sizing: border-box;
+  border: 2px solid $dark-grey-transparent-max;
+
+  &:hover {
+    border: 2px solid $dark-grey-transparent;
+  }
+
+  &:active {
+    border: 2px solid $tiffany;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+  }
+}
+
+.modal__radio-input:checked + .modal__radio {
+  border: 2px solid $tiffany;
+}
+
+.modal__button {
+  display: inline-block;
+  width: 100%;
+  background-color: $tiffany;
+  border: none;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: $fw-bold;
+  font-family: $main-font;
+  color: $white;
+  text-transform: uppercase;
+  padding: 18px 67px;
+  margin-top: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 13px;
+    padding-top: 21px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 18px 67px;
+  }
+}
