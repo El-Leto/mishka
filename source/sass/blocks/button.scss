@@ -1,0 +1,18 @@
+.button {
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: $dark-grey;
+  border: 2px solid $dark-grey;
+  cursor: pointer;
+
+  &:hover {
+    color: $white;
+    background-color: $dark-grey;
+  }
+
+  &:active {
+    color: $white-transparent;
+    outline: none;
+  }
+}

@@ -570,16 +570,12 @@
 }
 
 .form__button {
+  display: block;
   font-family: $main-font;
   font-size: 17px;
   line-height: 16px;
   font-weight: $fw-bold;
-  color: $dark-grey;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
   background-color: $white;
-  border: 2px solid $dark-grey;
   padding: 16px 10px;
   width: 100%;
   margin-top: 16px;

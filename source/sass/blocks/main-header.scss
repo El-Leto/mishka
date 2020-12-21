@@ -29,6 +29,7 @@
     top: -64px;
     background-image: url("../img/header-desktop.jpg");
     background-size: 1150px auto;
+    border-top: 1px solid $light-grey;
   }
 }
 
@@ -38,17 +39,17 @@
     content: "";
     position: relative;
     height: 12px;
-    background-image: url("../img/zigzag-png/zigzag-fill-tablet.png");
+    background-image: url("../img/zigzag/zigzag-fill.svg");
     background-repeat: repeat;
     background-position: top;
     background-size: auto;
-    margin-top: -12px;
+    margin-top: -11px;
   }
 
   @media (min-width: $desktop-width) {
+    background-image: url("../img/zigzag/zigzag-fill-desktop.svg");
     height: 17px;
     margin-top: -17px;
-    background-image: url("../img/zigzag-png/zigzag-fill-desktop.png");
   }
 }
 
@@ -84,7 +85,7 @@
 .main-header__item-button {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   color: $tiffany-darken-transparent;
   text-decoration: none;
 
@@ -94,6 +95,13 @@
 
   &:active {
     color: $tiffany-darken-transparent-max;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:hover {
+      height: 124px;
+      margin-top: -5px;
+    }
   }
 }
 
@@ -122,12 +130,12 @@
 
 .main-header__item-svg--subjects {
   margin-right: 36px;
-  margin-top: 23px;
+  margin-top: 30px;
   margin-bottom: 18px;
 }
 
 .main-header__item-svg--toys {
-  margin-right: 27px;
-  margin-top: 21px;
+  margin-right: 35px;
+  margin-top: 31px;
   margin-bottom: 22px;
 }
