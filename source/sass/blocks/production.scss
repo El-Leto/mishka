@@ -190,9 +190,11 @@
   transform: translate(-50%, -50%);
   background-color: $transparent;
   border: none;
+  outline: none;
 
   &:hover {
     transform: translate(-50%, -50%) scale(1.2);
+    outline: none;
   }
 
   &:active {

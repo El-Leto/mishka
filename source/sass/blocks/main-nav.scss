@@ -1,7 +1,9 @@
 .main-nav {
+  display: none;
   width: 100%;
 
   @media (min-width: $tablet-width) {
+    display: block;
     order: 3;
     width: 50%;
     z-index: 100;
@@ -13,41 +15,8 @@
   }
 }
 
-.main-nav__toggle {
-  position: absolute;
-  top: 1px;
-  right: 0;
-  z-index: 2;
+.main-nav--opened {
   display: block;
-  width: 81px;
-  height: 78px;
-  background-color: $transparent;
-  cursor: pointer;
-  border: none;
-  padding: 0;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  &:active,
-  &:focus {
-    border: none;
-  }
-}
-
-.main-nav__toggle--closed {
-  background-image: url("../img/menu-open.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
-}
-
-.main-nav__toggle--opened {
-  background-image: url("../img/menu-close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
 }
 
 .main-nav__block {
