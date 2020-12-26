@@ -1,11 +1,12 @@
 .nav-extra {
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     flex-direction: row;
     align-items: center;
     width: 398px;
@@ -14,4 +15,8 @@
   @media (min-width: $desktop-width) {
     order: 3;
   }
+}
+
+.nav-extra--opened {
+  display: flex;
 }

@@ -75,3 +75,52 @@
     margin-left: 11px;
   }
 }
+
+.page-header--no-js .main-nav {
+  display: block;
+}
+
+.page-header--no-js .nav-extra {
+  display: flex;
+}
+
+.page-header__toggle {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 81px;
+  height: 78px;
+  background-color: $transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &:active,
+  &:focus {
+    border: none;
+  }
+}
+
+.page-header__toggle--closed {
+  background-image: url("../img/menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.page-header__toggle--opened {
+  background-image: url("../img/menu-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.page-header__toggle--no-js {
+  background-image: none;
+}
