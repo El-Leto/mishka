@@ -45,6 +45,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 17px;
+    padding-left: 0;
   }
 }
 
@@ -71,7 +72,15 @@
   @media (min-width: $desktop-width) {
     padding-top: 32px;
     padding-bottom: 32px;
-    width: 50%;
+    padding-left: 50px;
+    width: 234px;
+  }
+}
+
+.main-nav__item:last-child {
+  @media (min-width: $desktop-width) {
+    border-left: 1px solid $light-grey;
+    padding-left: 35px;
   }
 }
 

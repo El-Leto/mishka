@@ -1,17 +1,25 @@
 .contacts-map {
+  background-image: url("../img/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
   height: 454px;
 
   @media (min-width: $tablet-width) {
+    background-image: url("../img/map-tablet.jpg");
     margin-bottom: 55px;
     height: 457px;
   }
 
   @media (min-width: $desktop-width) {
+    background-image: url("../img/map-desktop.jpg");
+    background-size: contain;
+    background-position: left;
     width: 50%;
     order: 5;
     margin-top: 72px;
     margin-bottom: 104px;
-    padding-right: 50px;
+    padding-right: 48px;
     box-sizing: border-box;
   }
 }

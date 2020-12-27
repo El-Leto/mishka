@@ -231,6 +231,10 @@
   border: 2px solid $black-transparent;
 }
 
+.form__radio:disabled + .form__label-radio::before {
+  border: 2px solid $black-transparent;
+}
+
 .form__radio:checked + .form__label-radio::after {
   content: "";
   position: absolute;
@@ -329,6 +333,10 @@
 }
 
 .form__checkbox:active + .form__label::before {
+  border: 2px solid $black-transparent;
+}
+
+.form__checkbox:disabled + .form__label::before {
   border: 2px solid $black-transparent;
 }
 
@@ -578,7 +586,7 @@
   background-color: $white;
   padding: 16px 10px;
   width: 100%;
-  margin-top: 16px;
+  margin-top: 30px;
   margin-bottom: 56px;
 
   @media (min-width: $tablet-width) {
