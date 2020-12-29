@@ -235,6 +235,10 @@
   border: 2px solid $black-transparent;
 }
 
+.form__radio:focus + .form__label-radio::before {
+  border: 2px solid $tiffany-background;
+}
+
 .form__radio:checked + .form__label-radio::after {
   content: "";
   position: absolute;
@@ -338,6 +342,10 @@
 
 .form__checkbox:disabled + .form__label::before {
   border: 2px solid $black-transparent;
+}
+
+.form__checkbox:focus + .form__label::before {
+  border: 2px solid $tiffany-background;
 }
 
 .form__checkbox:checked + .form__label::after {

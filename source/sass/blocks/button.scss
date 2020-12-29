@@ -11,6 +11,11 @@
     background-color: $dark-grey;
   }
 
+  &:focus {
+    color: $white;
+    background-color: $dark-grey;
+  }
+
   &:active {
     color: $white-transparent;
     outline: none;
