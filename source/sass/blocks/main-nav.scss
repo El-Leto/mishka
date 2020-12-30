@@ -137,6 +137,10 @@
   &:active {
     fill: $tiffany-transparent;
   }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .main-nav__search-svg {
@@ -144,6 +148,7 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 0;
+    z-index: 1;
   }
 }
 
@@ -157,13 +162,19 @@
   width: 80%;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
 }
 
 .main-nav__search::placeholder {
   color: $black;
   opacity: 1;
+
+  @media (min-width: $tablet-width) {
+    color: $transparent;
+  }
 }
 
 .main-nav__basket-svg {
