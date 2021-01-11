@@ -97,6 +97,6 @@
 
   &:active {
     color: $tiffany-footer;
-    border-bottom: none;
+    border-bottom: 1px solid $tiffany-footer-transparent;
   }
 }

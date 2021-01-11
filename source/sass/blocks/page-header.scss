@@ -5,6 +5,7 @@
   align-items: flex-start;
   max-width: $desktop-width;
   width: 100%;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;

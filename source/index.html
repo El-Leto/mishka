@@ -25,15 +25,15 @@
         </ul>
       </nav>
       <div class="nav-extra">
-        <form class="main-nav__form" method="get">
-          <label class="main-nav__search-label">
-            <svg class="main-nav__search-svg" width="18" height="18">
+        <form class="nav-extra__form" method="get">
+          <label class="nav-extra__search-label">
+            <svg class="nav-extra__search-svg" width="18" height="18">
               <use xlink:href="img/sprite.svg#icon-search"></use>
             </svg>
-            <input class="main-nav__search" type="search" placeholder="Поиск по сайту"></label>
+            <input class="nav-extra__search-input" type="search" placeholder="Поиск по сайту"></label>
           </form>
-        <a class="main-nav__basket" href="">
-          <svg class="main-nav__basket-svg" width="21" height="18">
+        <a class="nav-extra__basket" href="">
+          <svg class="nav-extra__basket-svg" width="21" height="18">
             <use xlink:href="img/sprite.svg#icon-basket"></use>
           </svg>Корзина: <span>пока пуста</span>
         </a>
@@ -148,12 +148,12 @@
             </blockquote>
           </div>
           <p class="reviews__toggles">
-            <button class="reviews__nav-button reviews__nav-button--left" type="button">
+            <button class="reviews__nav-button reviews__nav-button--left" type="button" aria-label="Переключение влево">
               <svg width="50" height="26">
                 <use xlink:href="img/sprite.svg#icon-left"></use>
               </svg>
             </button>
-            <button class="reviews__nav-button reviews__nav-button--right" type="button">
+            <button class="reviews__nav-button reviews__nav-button--right" type="button" aria-label="Переключение вправо">
               <svg width="50" height="26">
                 <use xlink:href="img/sprite.svg#icon-right"></use>
               </svg>
@@ -189,10 +189,10 @@
     </main>
     <footer class="page-footer">
       <div class="container">
-        <div class="page-footer__wrapper inner">
+        <div class="page-footer__wrapper">
           <section class="page-footer__logo">
             <h2 class="visually-hidden">Интернет-магазин «Мишка»</h2>
-            <a class="page-footer__button" href="index.html">
+            <a class="page-footer__button" href="index.html" aria-label="Логотип сайта">
               <svg class="page-footer__image" width="102" height="34">
                 <use xlink:href="img/sprite.svg#footer-logo-mishka"></use>
               </svg>

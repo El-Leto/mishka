@@ -3,21 +3,20 @@
   content: "";
   position: relative;
   height: 6px;
-  background-image: url("../img/zigzag/zigzag-line.png");
+  background-image: url("../img/zigzag/zigzag-line.svg");
   background-repeat: repeat;
   background-position: top;
   background-size: auto;
 
   @media (min-width: $tablet-width) {
     height: 17px;
-    background-image: url("../img/zigzag/zigzag-line-tablet.png");
-    background-size: 100%;
+    background-image: url("../img/zigzag/zigzag-line-tablet.svg");
     margin-bottom: 56px;
   }
 
   @media (min-width: $desktop-width) {
     height: 23px;
-    background-image: url("../img/zigzag/zigzag-line-desktop.png");
+    background-image: url("../img/zigzag/zigzag-line-desktop.svg");
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 68px;

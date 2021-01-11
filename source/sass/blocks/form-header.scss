@@ -1,14 +1,7 @@
 .form-header {
   background-color: $grey-footer;
 
-  @media (min-width: $tablet-width) {
-    position: relative;
-    top: -68px;
-    margin-bottom: -50px;
-  }
-
   @media (min-width: $desktop-width) {
-    top: -64px;
     border-top: 1px solid $light-grey;
   }
 }

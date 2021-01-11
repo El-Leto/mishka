@@ -22,20 +22,20 @@
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
         </ul>
       </nav>
       <div class="nav-extra">
-        <a class="main-nav__search-link" href="" aria-label="Поиск по сайту">
-          <form class="main-nav__form" method="get">
-            <label class="main-nav__search-label">
-              <svg class="main-nav__search-svg" width="18" height="18">
-                <use xlink:href="img/sprite.svg#icon-search"></use>
-              </svg>
-              <input class="main-nav__search" type="search" placeholder="Поиск по сайту" tabindex="-1"></label>
+        <form class="nav-extra__form" method="get">
+          <label class="nav-extra__search-label">
+            <svg class="nav-extra__search-svg" width="18" height="18">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+            <input class="nav-extra__search-input" type="search" placeholder="Поиск по сайту"></label>
           </form>
-        </a>
-        <a class="main-nav__basket" href="">
-          <svg class="main-nav__basket-svg" width="21" height="18">
+        <a class="nav-extra__basket" href="">
+          <svg class="nav-extra__basket-svg" width="21" height="18">
             <use xlink:href="img/sprite.svg#icon-basket"></use>
           </svg>Корзина: <span>пока пуста</span>
         </a>
@@ -55,7 +55,7 @@
         </div>
       </section>
       <section class="catalog container">
-        <ul class="catalog__list inner">
+        <ul class="catalog__list">
           <li class="catalog__item">
             <a class="catalog__link" href="">
               <picture>
@@ -137,7 +137,7 @@
         </ul>
       </section>
       <section class="production container">
-        <div class="production__wrapper inner">
+        <div class="production__wrapper">
           <div class="production__title">
             <h3 class="production__title-text">Процесс производства</h3>
           </div>
@@ -167,10 +167,10 @@
     </main>
     <footer class="page-footer">
       <div class="container">
-        <div class="page-footer__wrapper inner">
+        <div class="page-footer__wrapper">
           <section class="page-footer__logo">
             <h2 class="visually-hidden">Интернет-магазин «Мишка»</h2>
-            <a class="page-footer__button" href="index.html">
+            <a class="page-footer__button" href="index.html" aria-label="Логотип сайта">
               <svg class="page-footer__image" width="102" height="34">
                 <use xlink:href="img/sprite.svg#footer-logo-mishka"></use>
               </svg>

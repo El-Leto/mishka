@@ -1,11 +1,6 @@
 .fieldset-color {
-  padding-left: 30px;
-  padding-right: 30px;
-
   @media (min-width: $tablet-width) {
     background-color: $grey-footer;
-    padding-left: 50px;
-    padding-right: 50px;
     padding-top: 57px;
     padding-bottom: 11px;
   }

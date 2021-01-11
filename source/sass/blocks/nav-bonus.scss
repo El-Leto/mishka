@@ -3,9 +3,11 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    order: 4;
     z-index: 100;
     width: 489px;
+    position: absolute;
+    top: 90px;
+    left: 0;
   }
 }
 

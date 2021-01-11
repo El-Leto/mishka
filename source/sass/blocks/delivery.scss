@@ -3,13 +3,14 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    order: 5;
     font-size: 15px;
     line-height: 24px;
     width: 334px;
     text-align: right;
     z-index: 100;
-    padding-right: 50px;
-    margin-bottom: 3px;
+    position: absolute;
+    top: 109px;
+    right: 51px;
+    margin: 0;
   }
 }
