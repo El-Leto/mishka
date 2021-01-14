@@ -1,3 +1,19 @@
+let orders = document.querySelectorAll('.order');
+let modal = document.querySelector('.modal');
+
+for (let i = 0; i < orders.length; i++) {
+      orders[i].addEventListener ('click', function(evt) {
+        evt.preventDefault();
+        modal.classList.add('modal--open');
+      });
+}
+
+document.addEventListener("keydown", (evt) => {
+  if (evt.key === "Escape") {
+    modal.classList.remove('modal--open');
+  }
+});
+
 let page = document.querySelector('.page-header');
 let navToggle = document.querySelector('.page-header__toggle');
 let mainNav = document.querySelector('.main-nav');

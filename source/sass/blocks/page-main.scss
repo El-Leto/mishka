@@ -13,14 +13,14 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 154px;
+    padding-top: 89px;
     min-height: 441px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 156px;
+    padding-top: 92px;
     min-height: 439px;
   }
 }
@@ -42,6 +42,12 @@
     font-size: 53px;
     line-height: 57px;
     margin-top: 34px;
+  }
+}
+
+.page-main__subtitle--reviews {
+  @media (min-width: $tablet-width) {
+    max-width: 450px;
   }
 }
 

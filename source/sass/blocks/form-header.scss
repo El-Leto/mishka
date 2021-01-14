@@ -1,8 +1,9 @@
 .form-header {
   background-color: $grey-footer;
+  border-top: 1px solid $light-grey;
 
-  @media (min-width: $desktop-width) {
-    border-top: 1px solid $light-grey;
+  @media (min-width: $tablet-width) {
+    border-top: none;
   }
 }
 
@@ -23,7 +24,6 @@
     background-image: url("../img/zigzag/zigzag-fill-desktop.svg");
     height: 17px;
     margin-top: -17px;
-    background-size: auto;
   }
 }
 
@@ -41,14 +41,14 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 102px;
+    padding-top: 35px;
     min-height: 104px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 100px;
+    padding-top: 36px;
     min-height: 132px;
   }
 }

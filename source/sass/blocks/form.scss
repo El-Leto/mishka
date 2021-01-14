@@ -9,7 +9,7 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
-    padding-top: 32px;
+    padding-top: 49px;
     min-height: 102px;
     margin-left: 50px;
     margin-right: 50px;
@@ -82,6 +82,7 @@
   @media (min-width: $tablet-width) {
     width: 25%;
     margin: 0;
+    margin-top: 34px;
   }
 
   @media (min-width: $desktop-width) {
@@ -96,13 +97,19 @@
   font-weight: $fw-bold;
   color: $tiffany;
   text-transform: uppercase;
-  padding-top: 20px;
-  padding-bottom: 22px;
+  padding-right: 27px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 22px;
+    padding-right: 0;
   }
+}
+
+.form__label-contacts--e-mail {
+  min-width: 59px;
+  padding-right: 20px;
 }
 
 .form__input-contacts-wrapper {
@@ -529,9 +536,16 @@
     font-size: 19px;
     background-color: $grey-footer;
     padding-left: 17px;
+    padding-right: 60px;
     padding-top: 4px;
     padding-bottom: 13px;
     height: 26px;
+    width: 427px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 50px;
+    width: 619px;
   }
 }
 
@@ -550,7 +564,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
-    margin-bottom: 28px;
+    margin-bottom: 18px;
   }
 }
 
@@ -607,6 +621,8 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: baseline;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   @media (min-width: $desktop-width) {

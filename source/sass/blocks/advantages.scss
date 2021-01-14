@@ -42,9 +42,9 @@
     font-size: 20px;
     line-height: 22px;
     flex-wrap: wrap;
-    max-height: 550px;
     margin-top: 44px;
     margin-bottom: 54px;
+    flex-direction: row;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,6 +73,42 @@
   @media (min-width: $tablet-width) {
     width: 50%;
     margin-bottom: 27px;
+  }
+}
+
+.advantages__item--eco {
+  @media (min-width: $tablet-width) {
+    order: 0;
+  }
+}
+
+.advantages__item--cost {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.advantages__item--like {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+
+.advantages__item--handmade {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.advantages__item--russia {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.advantages__item--gift {
+  @media (min-width: $tablet-width) {
+    order: 5;
   }
 }
 
@@ -106,6 +142,10 @@
   background-size: auto;
   margin-top: 29px;
   margin-bottom: 16px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 27px;
+  }
 }
 
 .advantages__item--like::before {
@@ -120,6 +160,10 @@
   background-size: auto;
   margin-top: 34px;
   margin-bottom: 12px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 32px;
+  }
 }
 
 .advantages__item--handmade::before {
@@ -141,6 +185,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -1px;
     margin-bottom: 14px;
   }
 }

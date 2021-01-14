@@ -168,7 +168,8 @@
   @media (min-width: $tablet-width) {
     width: 175px;
     font-size: 17px;
-    margin-bottom: 16px;
+    margin-bottom: auto;
+    margin-top: 47px;
   }
 
   @media (min-width: $desktop-width) {

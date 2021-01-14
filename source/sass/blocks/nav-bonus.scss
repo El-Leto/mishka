@@ -1,14 +1,6 @@
 .nav-bonus {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    z-index: 100;
-    width: 489px;
-    position: absolute;
-    top: 90px;
-    left: 0;
-  }
+  display: flex;
+  align-items: center;
 }
 
 .nav-bonus__list {
@@ -24,6 +16,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 50px;
+    width: 439px;
   }
 }
 

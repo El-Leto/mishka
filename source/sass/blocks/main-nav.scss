@@ -4,18 +4,12 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    order: 3;
-    width: 50%;
-    z-index: 100;
-    position: absolute;
-    top: 90px;
-    left: 0;
+    max-width: 470px;
   }
 
   @media (min-width: $desktop-width) {
     order: 0;
     width: 489px;
-    position: static;
   }
 }
 
@@ -45,6 +39,7 @@
     font-size: 15px;
     line-height: 24px;
     padding-left: 50px;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,13 +73,14 @@
     padding-bottom: 32px;
     padding-left: 50px;
     width: 234px;
+    border-right: 1px solid $light-grey;
   }
 }
 
-.main-nav__item:last-child {
+.main-nav__item:nth-child(even) {
   @media (min-width: $desktop-width) {
-    border-left: 1px solid $light-grey;
     padding-left: 35px;
+    border-right: none;
   }
 }
 
@@ -92,6 +88,8 @@
   color: $black;
   text-decoration: none;
   display: block;
+  max-width: 217px;
+  margin: 0 auto;
 
   &:hover {
     color: $black-transparent-min;

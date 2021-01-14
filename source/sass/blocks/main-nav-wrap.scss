@@ -1,0 +1,27 @@
+.main-nav-wrap {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $background;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+    width: auto;
+    background-color: $white;
+  }
+}
+
+.main-nav-wrap--no-index {
+  @media (min-width: $tablet-width) {
+    background-color: $grey-footer;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
+}
